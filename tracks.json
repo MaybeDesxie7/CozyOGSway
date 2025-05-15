@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Urban Bounce",
+        "artist": "DJ Metro",
+        "genre": "Hip-Hop",
+        "src": "music\/urban-bounce.mp3"
+    },
+    {
+        "title": "Neon Nights",
+        "artist": "SynthBoy",
+        "genre": "Electronic",
+        "src": "music\/neon-nights.mp3"
+    },
+    {
+        "title": "Afro Drift",
+        "artist": "ZimVibe",
+        "genre": "Afrobeats",
+        "src": "music\/afro-drift.mp3"
+    },
+    {
+        "title": "Chillwave Dreams",
+        "artist": "LoMood",
+        "genre": "Lo-Fi",
+        "src": "music\/chillwave-dreams.mp3"
+    },
+    {
+        "title": "Soul & Synth",
+        "artist": "Sky Muse",
+        "genre": "R&B",
+        "src": "music\/soul-synth.mp3"
+    },
+    {
+        "title": "desxie",
+        "artist": "deesxie",
+        "genre": "hip hop",
+        "file": "music\/Soul-&-Synth.mp3"
+    }
+]
