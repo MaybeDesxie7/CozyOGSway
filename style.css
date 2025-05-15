@@ -25,47 +25,85 @@ ul {
 /* Navbar */
 .navbar {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
-  background: #1e1e2f;
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  align-items: center;
+  padding: 10px 20px;
+  background: #111;
+  color: #fff;
+  position: relative;
 }
 
-.logo {
-  font-size: 1.8rem;
+.navbar .logo {
+  font-size: 1.5rem;
   font-weight: bold;
-  color: #00ffe0;
+  color: limegreen;
 }
 
-.logo span {
-  color: #ffffff;
-}
-
-.navbar input[type="text"] {
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
+.navbar #searchInput {
+  padding: 5px 10px;
+  border-radius: 5px;
   border: none;
-  width: 200px;
-  background: #2c2c3c;
-  color: #00ffe0;
+  margin: 10px;
 }
 
+/* Nav links */
 .nav-links {
   display: flex;
-  gap: 1.5rem;
+  list-style: none;
+  gap: 15px;
 }
 
 .nav-links a {
-  padding: 0.3rem 0.8rem;
-  border-radius: 5px;
-  transition: background 0.3s;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
 }
 
+.nav-links a.active,
 .nav-links a:hover {
-  background: #00ffe04a;
+  color: limegreen;
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #111;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
+    z-index: 999;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .navbar #searchInput {
+    width: 100%;
+    margin: 10px 0;
+  }
 }
 
 /* Hero Section */
@@ -77,7 +115,7 @@ ul {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
 }
 
@@ -86,7 +124,7 @@ ul {
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -132,4 +170,49 @@ audio {
   width: 100%;
   outline: none;
 }
+.buzz-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
 
+.buzz-post {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.buzz-post:hover {
+  transform: translateY(-4px);
+}
+
+.buzz-post h3 {
+  color: limegreen;
+  margin-bottom: 0.5rem;
+}
+
+.buzz-post p {
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  color: #888;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+}
+
+.socials a {
+  color: #aaa;
+  margin: 0 0.3rem;
+  text-decoration: none;
+}
+
+.socials a:hover {
+  color: limegreen;
+}

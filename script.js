@@ -1,3 +1,18 @@
+function toggleMenu() {
+  const navLinks = document.getElementById('navLinks');
+  navLinks.classList.toggle('show');
+}
+// Mobile nav toggle
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  }
+});
 // Live Search Filtering for Tracks
 document.getElementById("searchInput").addEventListener("input", function () {
   const filter = this.value.toLowerCase();
@@ -429,3 +444,25 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+/*document.addEventListener('DOMContentLoaded', () => {
+  const buzzFeed = document.getElementById('buzzFeed');
+  if (buzzFeed) {
+    fetch('buzz.json')
+      .then(res => res.json())
+      .then(data => {
+        data.forEach(post => {
+          const div = document.createElement('div');
+          div.classList.add('buzz-post');
+          div.innerHTML = `
+            <h3>${post.title}</h3>
+            <p>${post.description}</p>
+          `;
+          buzzFeed.appendChild(div);
+        });
+      })
+      .catch(err => {
+        buzzFeed.innerHTML = '<p style="text-align:center;">Unable to load buzz feed.</p>';
+        console.error(err);
+      });
+  }
+});*/

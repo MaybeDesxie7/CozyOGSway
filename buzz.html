@@ -1,114 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Buzz - CozyOGSway Music</title>
-  <style>
-    body {
-      background-color: #0f0f0f;
-      color: #ffffff;
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    .navbar {
-      background-color: #1a1a1a;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      border-bottom: 1px solid #333;
-    }
-
-    .logo {
-      font-size: 1.5rem;
-      color: limegreen;
-      font-weight: bold;
-    }
-
-    .logo span {
-      color: white;
-    }
-
-    .nav-links a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .nav-links a:hover {
-      color: limegreen;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 4rem 2rem 2rem;
-      background-color: #141414;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-    }
-
-    .hero span {
-      color: limegreen;
-    }
-
-    .hero p {
-      margin-top: 0.5rem;
-      color: #cccccc;
-    }
-
-    .section {
-      padding: 2rem;
-    }
-
-    .buzz-post {
-      background-color: #1a1a1a;
-      border: 1px solid #333;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      border-radius: 10px;
-      transition: transform 0.2s ease;
-    }
-
-    .buzz-post:hover {
-      transform: translateY(-4px);
-    }
-
-    .buzz-post h3 {
-      color: limegreen;
-      margin-bottom: 0.5rem;
-    }
-
-    .buzz-post p {
-      color: #cccccc;
-      line-height: 1.6;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #1a1a1a;
-      color: #888;
-      font-size: 0.9rem;
-      border-top: 1px solid #333;
-    }
-
-    .socials a {
-      color: #aaa;
-      margin: 0 0.3rem;
-      text-decoration: none;
-    }
-
-    .socials a:hover {
-      color: limegreen;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -116,15 +12,14 @@
   <nav class="navbar">
     <div class="logo">Cozy<span>OGSway</span></div>
     <input type="text" id="searchInput" placeholder="Search tracks..." />
+    <div class="hamburger">&#9776;</div>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="explore.html">Explore</a>
-      <a href="buzz.html">Buzz</a>
-      <a href="upload.html" class="active">Upload</a>
+      <a href="buzz.html" class="active">Buzz</a>
+      <a href="upload.html">Upload</a>
     </div>
   </nav>
-
-  
 
   <!-- Buzz Hero -->
   <section class="hero">
@@ -133,27 +28,13 @@
   </section>
 
   <!-- Feed Section -->
-  <section class="section" id="buzzFeed">
-    <!-- Dynamic news will be loaded here -->
-    <div class="buzz-post">
-      <h3>🔥 Artist Spotlight: JxC</h3>
-      <p>JxC drops a fresh beat pack with urban synths and afro textures. Check out his new tracks in Explore!</p>
+  <section class="section">
+    <h2>📰 Latest Buzz</h2>
+    <div id="buzzFeed" class="buzz-feed">
+      <!-- Dynamic news will be loaded here by script.js -->
     </div>
-    <div class="buzz-post">
-      <h3>🎶 CozyOGSway x BeatCamp</h3>
-      <p>We’re teaming up with BeatCamp for exclusive producer challenges and giveaways.</p>
-    </div>
-    <div class="buzz-post">
-      <h3>📰 Trending Now</h3>
-      <p>"Lo-Fi Rebirth" is topping the charts this week. More chill listeners are coming to CozyOGSway than ever!</p>
-    </div>
-    <section class="section">
-  <h2>📰 Latest Buzz</h2>
-  <div id="buzzFeed" class="buzz-feed"></div>
-</section>
-
   </section>
-  
+
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 CozyOGSway Music. All rights reserved.</p>

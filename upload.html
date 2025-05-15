@@ -8,14 +8,24 @@
 </head>
 <body>
   <nav class="navbar">
-    <div class="logo">Cozy<span>OGSway</span></div>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="explore.html">Explore</a>
-      <a href="buzz.html">Buzz</a>
-      <a href="upload.html" class="active">Upload</a>
-    </div>
-  </nav>
+    <div class="hamburger">&#9776;</div>
+  <div class="logo">CozyOGSway<span>Music</span></div>
+
+  <input type="text" id="searchInput" placeholder="Search music...">
+
+  <!-- Hamburger Menu Button (mobile) --
+  <div class="hamburger" onclick="toggleMenu()">
+    ☰
+  </div>-->
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="explore.html">Explore</a></li>
+    <li><a href="buzz.html">Buzz</a></li>
+    <li><a href="upload.html" class="active">Upload</a></li>
+  </ul>
+</nav>
+
 
   <section class="section">
     <h2>📤 Upload New Track</h2>
