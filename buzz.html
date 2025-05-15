@@ -9,17 +9,20 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo">Cozy<span>OGSway</span></div>
-    <input type="text" id="searchInput" placeholder="Search tracks..." />
-    <div class="hamburger">&#9776;</div>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="explore.html">Explore</a>
-      <a href="buzz.html" class="active">Buzz</a>
-      <a href="upload.html">Upload</a>
-    </div>
-  </nav>
+ <nav class="navbar">
+  <div class="logo">🎧 CozyOGSway<span>Music</span></div>
+
+  <input type="text" id="searchInput" placeholder="Search music...">
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="explore.html">Explore</a></li>
+    <li><a href="buzz.html" class="active">Buzz</a></li>
+    <li><a href="upload.html">Upload</a></li>
+  </ul>
+</nav>
 
   <!-- Buzz Hero -->
   <section class="hero">
