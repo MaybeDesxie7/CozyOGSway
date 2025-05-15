@@ -1,9 +1,14 @@
+/*function toggleMenu() {
+  const navLinks = document.getElementById('navLinks');
+  navLinks.classList.toggle('show');
+}*/
 function toggleMenu() {
   const navLinks = document.getElementById('navLinks');
   navLinks.classList.toggle('show');
 }
+
 // Mobile nav toggle
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('.nav-links');
 
@@ -12,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       navLinks.classList.toggle('show');
     });
   }
-});
+});*/
 // Live Search Filtering for Tracks
 document.getElementById("searchInput").addEventListener("input", function () {
   const filter = this.value.toLowerCase();
